@@ -47,11 +47,11 @@ export const I18N = {
     "product.beam": "Trave strutturale",
     "product.chair": "Sedia in legno",
     "product.panel": "Pannello murale",
-    "product.plank": "Tavola machihembrada",
+    "product.plank": "Tavola perlinata",
     "product.beam.desc": "Trave squadrata in abete, ideale per strutture e tetti.",
     "product.chair.desc": "Sedia essenziale in legno massello, design lineare.",
     "product.panel.desc": "Pannello murale per rivestimenti e divisori interni.",
-    "product.plank.desc": "Tavola con incastro maschio-femmina per pavimenti e perline.",
+    "product.plank.desc": "Tavola perlinata con incastro maschio-femmina per pavimenti e rivestimenti.",
 
     "contact.eyebrow": "Contatti",
     "contact.title": "Parliamo del tuo progetto.",
