@@ -216,16 +216,24 @@ h2 {
 .hero-bg {
   position: absolute; inset: 0;
   z-index: -2;
-  background:
-    radial-gradient(70% 60% at 50% 0%, rgba(200,163,106,.18), transparent 60%),
-    linear-gradient(180deg, rgba(14,14,12,.2) 0%, rgba(14,14,12,.85) 65%, var(--bg) 100%),
-    url('../ASSETS%20SUMA%202/hero-poster.png') center/cover no-repeat;
-  filter: saturate(1.05);
+  overflow: hidden;
+  background: #0e0e0c;
 }
-.hero-bg::after {
-  content: '';
+.hero-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  filter: saturate(1.05) contrast(1.02);
+}
+.hero-bg-overlay {
   position: absolute; inset: 0;
-  background: radial-gradient(60% 50% at 50% 100%, rgba(14,14,12,.95), transparent 70%);
+  background:
+    radial-gradient(70% 60% at 50% 0%, rgba(200,163,106,.16), transparent 60%),
+    linear-gradient(180deg, rgba(14,14,12,.25) 0%, rgba(14,14,12,.82) 65%, var(--bg) 100%),
+    radial-gradient(60% 50% at 50% 100%, rgba(14,14,12,.95), transparent 70%);
+  pointer-events: none;
 }
 .hero-content { max-width: 880px; }
 .hero h1 {
