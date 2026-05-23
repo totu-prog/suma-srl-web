@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUMA S.r.l. — Tradizione del legno dal 1976</title>
+  <meta name="description" content="SUMA S.r.l. — Commercio all'ingrosso di legname, materiali edili, carpenteria, compensati e truciolari. Manzano (UD), Italia, dal 1976." />
+  <link rel="icon" href="ASSETS%20SUMA%202/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="SUMA">
+        <img src="ASSETS%20SUMA%202/logo.png" alt="SUMA logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">Chi siamo</a></li>
+        <li><a href="#services" data-i18n="nav.services">Servizi</a></li>
+        <li><a href="#products" data-i18n="nav.products">Prodotti 3D</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contatti</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang">
+          <button id="langBtn" class="lang-btn" aria-haspopup="true" aria-expanded="false">
+            <span aria-hidden="true">🌐</span>
+            <span class="lang-code">IT</span>
+            <span aria-hidden="true">▾</span>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button data-lang="it"><span class="flag">🇮🇹</span> Italiano</button>
+            <button data-lang="en"><span class="flag">🇬🇧</span> English</button>
+            <button data-lang="zh"><span class="flag">🇨🇳</span> 中文</button>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Richiedi preventivo</a>
+        <button class="nav-burger" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Dal 1976 · Manzano (UD), Italia</span>
+      <h1 class="display" data-i18n="hero.title">La tradizione del legno, lavorata con precisione.</h1>
+      <p class="lead" data-i18n="hero.subtitle">Commercio all'ingrosso di legname, materiali edili e carpenteria su misura per imprese, artigiani e falegnami del Friuli-Venezia Giulia.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.cta.primary">Richiedi un preventivo</a>
+        <a href="#products" class="btn btn-ghost btn-lg" data-i18n="hero.cta.secondary">Scopri i prodotti</a>
+      </div>
+
+      <div class="hero-badges">
+        <div class="hero-badge reveal">
+          <span class="num">50+</span>
+          <span class="label" data-i18n="hero.badge.years">Anni di esperienza</span>
+        </div>
+        <div class="hero-badge reveal">
+          <span class="num">1.000+</span>
+          <span class="label" data-i18n="hero.badge.clients">Clienti soddisfatti</span>
+        </div>
+        <div class="hero-badge reveal">
+          <span class="num">FVG</span>
+          <span class="label" data-i18n="hero.badge.coverage">Copertura regionale</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">Chi siamo</span>
+        <h2 data-i18n="about.title">Quasi cinquant'anni al servizio del legno.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p data-i18n="about.body">SUMA S.r.l. (di Biancuzzi & Pavan) nasce nel 1976 nel cuore del distretto del mobile friulano…</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><span class="v">1976</span><span class="l" data-i18n="about.stat1.label">Anno di fondazione</span></div>
+          <div class="stat"><span class="v">1.000+</span><span class="l" data-i18n="about.stat2.label">Clienti serviti</span></div>
+          <div class="stat"><span class="v">€1,69M</span><span class="l" data-i18n="about.stat3.label">Capitale sociale</span></div>
+          <div class="stat"><span class="v" data-i18n="about.stat4.value">Manzano (UD)</span><span class="l" data-i18n="about.stat4.label">Sede storica</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section id="services" class="tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="services.eyebrow">I nostri servizi</span>
+        <h2 data-i18n="services.title">Tutto il legno di cui hai bisogno, in un unico partner.</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="thumb"><img src="ASSETS%20SUMA%202/service-1.jpg" alt="Commercio legname" /></div>
+          <div class="body">
+            <h3 data-i18n="services.1.title">Commercio Legname</h3>
+            <p data-i18n="services.1.body">Distribuzione all'ingrosso di legname pregiato.</p>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <div class="thumb"><img src="ASSETS%20SUMA%202/service-2.jpg" alt="Materiali edili" /></div>
+          <div class="body">
+            <h3 data-i18n="services.2.title">Materiali Edili</h3>
+            <p data-i18n="services.2.body">Fornitura completa di travi, tavole e pannelli.</p>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <div class="thumb"><img src="ASSETS%20SUMA%202/service-3.jpg" alt="Carpenteria" /></div>
+          <div class="body">
+            <h3 data-i18n="services.3.title">Carpenteria</h3>
+            <p data-i18n="services.3.body">Lavorazioni di carpenteria su misura.</p>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <div class="thumb"><img src="ASSETS%20SUMA%202/service-4.jpg" alt="Compensati" /></div>
+          <div class="body">
+            <h3 data-i18n="services.4.title">Compensati & Truciolari</h3>
+            <p data-i18n="services.4.body">Compensati, MDF, OSB e truciolari.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3D Products ===== -->
+  <section id="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="products.eyebrow">Esperienza 3D</span>
+        <h2 data-i18n="products.title">Esplora i nostri prodotti in 3D.</h2>
+        <p data-i18n="products.subtitle">Ruota, ingrandisci e ispeziona ogni elemento. Le misure sono indicative e personalizzabili su richiesta.</p>
+      </div>
+
+      <div class="three-wrap">
+        <div class="product-list">
+          <button class="product-btn active" data-product="beam">
+            <span class="pname" data-i18n="product.beam">Trave strutturale</span>
+            <span class="pdesc" data-i18n="product.beam.desc">Trave squadrata in abete, ideale per strutture e tetti.</span>
+            <span class="pdim">200 × 12 × 12 cm</span>
+          </button>
+          <button class="product-btn" data-product="chair">
+            <span class="pname" data-i18n="product.chair">Sedia in legno</span>
+            <span class="pdesc" data-i18n="product.chair.desc">Sedia essenziale in legno massello.</span>
+            <span class="pdim">45 × 45 × 85 cm</span>
+          </button>
+          <button class="product-btn" data-product="panel">
+            <span class="pname" data-i18n="product.panel">Pannello murale</span>
+            <span class="pdesc" data-i18n="product.panel.desc">Pannello murale per rivestimenti interni.</span>
+            <span class="pdim">250 × 120 × 2 cm</span>
+          </button>
+          <button class="product-btn" data-product="plank">
+            <span class="pname" data-i18n="product.plank">Tavola machihembrada</span>
+            <span class="pdesc" data-i18n="product.plank.desc">Tavola con incastro maschio-femmina.</span>
+            <span class="pdim">200 × 14 × 2 cm</span>
+          </button>
+        </div>
+
+        <div class="viewer" id="viewer">
+          <div class="viewer-dims" id="dimsPanel"></div>
+          <div class="viewer-hint" data-i18n="products.hint">Trascina per ruotare · Rotella per zoom · Tasto destro per spostare</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Contatti</span>
+        <h2 data-i18n="contact.title">Parliamo del tuo progetto.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-card reveal">
+            <span class="l" data-i18n="contact.address.label">Sede</span>
+            <span class="v" data-i18n="contact.address.value">Via Bellini, 2 — 33044 Manzano (UD), Italia</span>
+          </div>
+          <div class="info-card reveal">
+            <span class="l" data-i18n="contact.phone.label">Telefono</span>
+            <span class="v">0432 754157 · 0432 754605</span>
+          </div>
+          <div class="info-card reveal">
+            <span class="l" data-i18n="contact.hours.label">Orari</span>
+            <span class="v" data-i18n="contact.hours.value">Lun–Ven 8:00–12:00 / 14:00–18:00 · Sab 8:00–12:00</span>
+          </div>
+          <div class="info-card reveal">
+            <span class="l" data-i18n="contact.email.label">Email</span>
+            <span class="v">info@suma-srl.it</span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('Grazie! Ti ricontatteremo presto.');">
+          <label>
+            <span data-i18n="form.name">Nome e cognome</span>
+            <input type="text" required />
+          </label>
+          <label>
+            <span data-i18n="form.email">Email</span>
+            <input type="email" required />
+          </label>
+          <label>
+            <span data-i18n="form.message">Come possiamo aiutarti?</span>
+            <textarea required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-lg" data-i18n="form.submit">Invia richiesta</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="ASSETS%20SUMA%202/logo.png" alt="SUMA" />
+          <span>SUMA S.r.l.</span>
+        </div>
+        <p data-i18n="footer.tagline">Legname, materiali edili e carpenteria dal 1976.</p>
+      </div>
+      <div class="footer-meta">
+        <div class="row" data-i18n="footer.legal">P.IVA 00409900305 · ATECO 46.73.1 · Capitale sociale €1.695.000</div>
+        <div class="row">© 2026 SUMA S.r.l. — <span data-i18n="footer.rights">Tutti i diritti riservati.</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
